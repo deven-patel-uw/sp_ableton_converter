@@ -6,7 +6,7 @@ def build_wav_project_folder(sp_project_folder: str, wav_folder: str) -> None:
     :param wav_folder: Path to the folder that will contain the output .WAV files.
     """
     import os
-    import convert_smp_to_wav
+    import python_tests.convert_smp_to_wav as convert_smp_to_wav
 
     # find the "samples" folder in the SP project folder
     samples_folder = os.path.join(sp_project_folder, "SMPL")
